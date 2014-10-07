@@ -1,0 +1,5 @@
+name: Gaaflora Galleries Photography
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'tables', 'autolink', 'strikethrough']
+pygments: true

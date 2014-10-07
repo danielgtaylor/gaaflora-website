@@ -1,0 +1,101 @@
+/*****************************************************************************/
+/*
+/* Bootstrap
+/*
+/*****************************************************************************/
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.navbar .navbar-right a {
+  font-weight: 400;
+}
+
+.navbar .navbar-brand {
+  font-size: 32pt;
+}
+
+.nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer .copyright {
+  opacity: 0.5;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
