@@ -1,5 +1,7 @@
 ---
-published: false
+layout: post
+published: true
+title: A New Post
 ---
 
 ## A New Post
