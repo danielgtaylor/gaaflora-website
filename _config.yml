@@ -2,11 +2,12 @@ name: Gaaflora Galleries Photography
 markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'autolink', 'strikethrough']
-pygments: true
+highlighter: rouge
 exclude:
 - README.md
 - id_rsa
 - id_rsa.enc
+- deploy.sh
 prose:
   rooturl: _posts
   siteurl: http://beta.gaaflora.com/

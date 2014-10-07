@@ -5,5 +5,5 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_b4493d45b0d5_key -iv $encrypted_b4493d45b0d5_iv
   -in id_rsa.enc -out id_rsa -d
 install:
-- gem install jekyll redcarpet
+- gem install --no-rdoc --no-ri jekyll redcarpet
 script: jekyll build && ./deploy.sh
