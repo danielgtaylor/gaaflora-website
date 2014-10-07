@@ -3,3 +3,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'autolink', 'strikethrough']
 pygments: true
+exclude:
+- README.md
+- id_rsa
+- id_rsa.enc
