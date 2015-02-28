@@ -7,7 +7,7 @@ It is built using [Hexo](http://hexo.io/), a static site generator written in Ja
 First, make sure you have Hexo installed:
 
 ```bash
-$ sudo npm install -g hexo
+$ sudo npm install -g hexo-cli
 ```
 
 Next, install the dependencies:
