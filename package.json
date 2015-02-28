@@ -1,0 +1,10 @@
+{
+  "name": "gaaflora-website",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "hexo-renderer-jade": "^0.1.0",
+    "hexo-renderer-markdown-it": "^2.1.2",
+    "hexo-renderer-stylus": "*"
+  }
+}

@@ -1,0 +1,18 @@
+doctype
+
+html
+    head
+        title= page.title || config.title
+        link(rel="stylesheet", href="/style.css")
+
+    body
+        #container
+            h1 Gaaflora Galleries
+            nav
+                ol
+                    li: a(href="#") Portraits
+                    li: a(href="#") Music
+                    li: a(href="#") About
+            != body
+            #footer
+                p Copyright &copy; 2015 Kari N. Taylor
