@@ -20,11 +20,14 @@ $ npm install
 Now you can run the site:
 
 ```bash
-# Run a server
+# Run a local server
 $ hexo server
 
-# Generate the website
+# Generate the website HTML
 $ hexo generate
+
+# Deply the website
+$ hexo deploy
 ```
 
 ## License
