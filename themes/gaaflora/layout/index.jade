@@ -1,22 +1,26 @@
-img(src="/homepage/banner.jpg", style="width: 100%")
-.row
-    a(href="#").category
-        img(src="/homepage/music.jpg")
-        label Music
-    a(href="#").category
-        img(src="/homepage/editorial.jpg")
-        label Editorial
-.row
-    a(href="#").category
-        img(src="/homepage/portraits.jpg")
-        label Portraits
-    a(href="#").category
-        img(src="http://lorempixel.com/500/333/nature")
-        label Travel
-.row
-    a(href="#").category
-        img(src="/homepage/products.jpg")
-        label Products
-    a(href="#").category
-        img(src="/homepage/about.jpg")
-        label About
+if page.content
+    != page.content
+else
+    img(src="/homepage/banner.jpg", style="width: 100%")
+    .row
+        a(href="/music/").category
+            img(src="/homepage/music.jpg")
+            label Music
+        a(href="/editorial/").category
+            img(src="/homepage/editorial.jpg")
+            label Editorial
+    .row
+        a(href="/portraits/").category
+            img(src="/homepage/portraits.jpg")
+            label Portraits
+        a(href="/travel/").category
+            img(src="http://lorempixel.com/500/333/nature")
+            label Travel
+    .row
+        a(href="/products/").category
+            img(src="/homepage/products.jpg")
+            label Products
+        a(href="#").category
+            img(src="/homepage/about.jpg")
+            label About
+
