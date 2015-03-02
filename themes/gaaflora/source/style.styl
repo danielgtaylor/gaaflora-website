@@ -12,35 +12,30 @@ a
     color #e84436
 
 #container
-    max-width 1024px
     margin auto
 
 #logo
     text-indent -9999px
     width 592px
     height 127px
-    background-image url(http://dummyimage.com/592x127/ffffff/000000&text=Gaaflora%20Galleries)
+    background url(/logo.png) 8px -80px no-repeat
     margin 55px auto 43px auto
 
 nav
     background-color black
-    font-size 22pt
-    letter-spacing 1.5px
 
     ol
         list-style-type none
         text-align center
         padding 0
         margin 0
-    
+
     li
         display inline-block
-        padding 18px 0px
-    
+
     a
         color white
         text-decoration none
-        padding 18px 22px
         transition color 0.4s ease-in-out
 
         &:hover
@@ -53,37 +48,123 @@ nav
 
 .category
     position relative
-    display inline-block
-
-    &:nth-child(2)
-        margin-left 24px
 
     &:hover label
         opacity 1.0
+
+    img
+        width 100%
 
     label
         cursor pointer
         position absolute
         display block
-        width 500px
-        height 64px
-        top 142px
+        width 100%
+        top 39%
         color black
         background-color #f6b761
         font-family 'Arial', sans-serif
-        font-size 30pt
-        padding-top 11px
         text-transform uppercase
         text-align center
         opacity 0.6
         transition opacity 0.4s ease-in-out
 
 #footer
-    font-size 24pt
     text-align center
     color #505050
 
-    img
-        width 48px
-        height 48px
-        margin-right 44px
+// Responsive thresholds: 480, 768, 1024
+@media screen and (max-width: 767px)
+    .category
+        display block
+
+        label
+            height 64px
+            font-size 30pt
+            padding-top 11px
+
+    #footer
+        font-size 16pt
+
+        img
+            width 36px
+            height 36px
+            margin-right 24px
+
+@media screen and (min-width: 768px)
+    .category
+        display inline-block
+        width 48%
+
+        &:nth-child(2)
+            margin-left 4%
+
+@media screen and (min-width: 1024px)
+    #container
+        width 1024px
+
+    nav
+        font-size 22pt
+        letter-spacing 1.5px
+
+        li
+            padding 18px 0
+
+        a
+            padding 18px 22px
+
+    .category
+        label
+            height 64px
+            font-size 30pt
+            padding-top 11px
+
+    #footer
+        font-size 24pt
+
+        img
+            width 48px
+            height 48px
+            margin-right 44px
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+    #container
+        width 768px
+
+    nav
+        font-size 16pt
+        letter-spacing 1.2px
+
+        li
+            padding 12px 0
+
+        a
+            padding 12px 16px
+
+    .category
+        label
+            height 48px
+            font-size 22pt
+            padding-top 8px
+
+    #footer
+        font-size 20pt
+
+        img
+            width 36px
+            height 36px
+            margin-right 32px
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+    #container
+        width 100%
+
+    nav
+        display none
+
+@media screen and (max-width: 479px)
+    #container
+        width 100%
+
+    nav
+        display none
