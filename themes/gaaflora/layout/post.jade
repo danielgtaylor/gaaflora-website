@@ -1,0 +1,13 @@
+.post(itemscope, itemprop="blogPost")
+    h2(itemprop="name")= page.title
+    .menu
+        h3 Posts menu
+        p Coming soon
+        p ...
+    .content(itemprop="articleBody")
+        p.date
+            a(href=page.permalink, itemprop="url")
+                | published on
+                = ' '
+                time(datetime=page.date, itemprop="datePublished")= date(page.date)
+        != page.content
